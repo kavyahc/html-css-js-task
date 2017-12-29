@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample task</title>
+		<link href="monday_task.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Teknotrait</h1>
+		</header>
+		<section class="container">
+			
+			<div class="left-half">
+				<form id="searchbox" action="">
+					<input id="search" type="text" placeholder="Type here">
+					<input id="submit" type="submit" value="Search">
+				</form><br>
+				<br>
+				<form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
+				  <fieldset>
+					<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+						<div>
+						  <label for="fileselect">Files to upload:</label>
+						  <input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+						  <div id="filedrag">or drop files here</div>
+						</div>
+
+						<div id="submitbutton">
+						  <button type="submit">Upload Files</button>
+						</div>
+				  </fieldset>
+				</form>
+
+				<div id="messages">
+				  <p>Status Messages</p>
+				</div>
+			</div>
+
+			<div class="right-half">
+				<article>
+					<button onclick="getLocation()">click</button>
+					<p>get your location here.</p>
+					<p id="demo"></p>
+				</article>
+				<form>
+					<h2>Add tasks here</h2>
+					<input id="task"><button id="add">Add</button>
+					<hr>
+					<div id="todos"></div>
+			
+				</form>
+			</div>
+		</section>
+	
+	<script src="monday_task.js"></script>
+	</body>
+</html>
+
+
+
+    
